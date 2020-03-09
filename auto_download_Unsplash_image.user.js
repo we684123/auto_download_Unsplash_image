@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         auto_download_Unsplash_image
 // @name:zh-TW   自動下載 Unsplash 的照片
-// @version      1.0
+// @version      1.1
 // @description  while you open Unspladh photo web , will download this photo.
 // @description:zh-tw  當你打開 Unsplash 網站的照片網址時，這個腳本會自動下載圖片到你的電腦。
 // @author       we684123@github
@@ -16,7 +16,7 @@
 
 (function() {
   //基礎定義
-  var class_name = "_1yvXd _1l4Hh _1CBrG _1zIyn xLon9 _1Tfeo _1AA_u TPbmh _2Xklx"
+  var class_name = "_2sYIa _1jjdS _1CBrG _1WPby xLon9 _30mli _17avz _1Tfeo _1AA_u"
   var name_st_str = '&dl'
   var offset = 4
 
