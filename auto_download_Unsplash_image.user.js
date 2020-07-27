@@ -14,11 +14,12 @@
 // @domain       https://unsplash.com/
 // ==/UserScript==
 
-(function() {
+(function () {
   //基礎定義
-  var class_name = "_2sYIa _1jjdS _1CBrG _1WPby xLon9 _30mli _17avz _1Tfeo _1AA_u"
-  var name_st_str = '&dl'
-  var offset = 4
+  var class_name =
+    "_2sYIa _3jtP1 _1CBrG _1WPby xLon9 _30mli hhSId _1B083 _3d86A _22Rl1 _1AA_u";
+  var name_st_str = "&dl";
+  var offset = 4;
 
   var image_download_url = document.getElementsByClassName(class_name)[0].href;
   try {
@@ -27,28 +28,27 @@
       method: "GET",
       url: image_download_url,
 
-      onload: function(response) {
+      onload: function (response) {
         //console.log('response');
         //console.log(response);
         //console.log(response['responseHeaders']);
 
-        var idl = String(response['finalUrl'])
-        var st = idl.indexOf(name_st_str) + offset
-        var image_name = idl.slice(st)
+        var idl = String(response["finalUrl"]);
+        var st = idl.indexOf(name_st_str) + offset;
+        var image_name = idl.slice(st);
         //console.log('idl');
         //console.log(idl);
         var arg = {
           url: idl,
-          name: image_name
+          name: image_name,
         };
         var result = GM_download(arg);
-      }
-    })
+      },
+    });
   } catch (e) {
-    console.log('error:');
+    console.log("error:");
     console.log(e);
   } finally {
-    console.log('===== end =====');
+    console.log("===== end =====");
   }
-
 })();
