@@ -49,6 +49,6 @@
     console.log("error:");
     console.log(e);
   } finally {
-    console.log("===== end =====");
+    console.log("====== end ======");
   }
 })();
