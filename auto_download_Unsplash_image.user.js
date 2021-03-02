@@ -17,7 +17,7 @@
 (function () {
   //基礎定義
   var class_name =
-    "_2sYIa _3jtP1 _1CBrG _1WPby xLon9 _30mli hhSId _1B083 _3d86A _22Rl1 _1AA_u";
+    "_2jBzD _3jtP1 _1CBrG _1WPby xLon9 _asSA hhSId _1B083 _3d86A _22Rl1 _1AA_u untracked";
   var name_st_str = "&dl";
   var offset = 4;
 
